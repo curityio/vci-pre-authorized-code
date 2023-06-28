@@ -1,5 +1,8 @@
 # Verifiable Credentials Issuance with Pre-Authorized Code
 
+[![Quality](https://img.shields.io/badge/quality-demo-red)](https://curity.io/resources/code-examples/status/)
+[![Availability](https://img.shields.io/badge/availability-source-blue)](https://curity.io/resources/code-examples/status/)
+
 The Curity Identity Server is able to issue verifiable credentials using the pre-authorized code flow from the [OpenID for Verifiable Credentials Issuance](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0-11.html) specification. This repository contains configuration files that can simplify setting up the Curity Identity Server for this scenario.
 
 The files in this repo can be used in a few ways:
