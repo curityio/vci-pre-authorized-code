@@ -13,4 +13,4 @@ if [ ! -f './license.json' ]; then
   exit 1
 fi
 
-docker run -it --name curity-vci-preregistered-code -e PASSWORD=Password1 -e JAVA_OPTS="-Dse.curity.verifiable-credentials.enable=true" -v ${PWD}/license.json:/opt/idsvr/etc/init/license/license.json -v ${PWD}/idsvr/docker/min-configuration.xml:/opt/idsvr/etc/init/min-configuration.xml -v ${PWD}/idsvr/full-vci-configuration.xml:/opt/idsvr/etc/init/vci-configuration.xml -p 6749:6749 -p 8443:8443 curity.azurecr.io/curity/idsvr:8.3.0
+docker run -it --name curity-vci-pre-authorized-code -e PASSWORD=Password1 -e JAVA_OPTS="-Dse.curity.verifiable-credentials.enable=true" -v ${PWD}/license.json:/opt/idsvr/etc/init/license/license.json -v ${PWD}/idsvr/docker/min-configuration.xml:/opt/idsvr/etc/init/min-configuration.xml -v ${PWD}/idsvr/full-vci-configuration.xml:/opt/idsvr/etc/init/vci-configuration.xml -p 6749:6749 -p 8443:8443 curity.azurecr.io/curity/idsvr:8.3.0
