@@ -16,10 +16,6 @@
       <expose-detailed-error-messages/>
       <settings>
         <authorization-server xmlns="https://curity.se/ns/conf/profile/oauth">
-          <client-capabilities>
-            <code>
-            </code>
-          </client-capabilities>
           <scopes>
             <scope>
               <id>openid_credential</id>
@@ -147,7 +143,7 @@
         <signing-key>
           <id>credential_issuer_key</id>
           <eddsa-curve-name>Ed25519</eddsa-curve-name>
-          <keystore>data:application/p12;aes,v:S.VEZ4NEpMMkJzSWVFTm5XUw==.WZMP_OdxR76JqzE5tlPbqw==.ckPzxSK0aBLWhcNv9nr0sJx_vaja6alZH9MhTDVq0GzfLkOfpYFztafXzd4kGCtI8Dys_Lu6nexjccG-bKcoXfD0n-HWYMJ6PndPMD8hbSzqWwLTZ4FS322EBXHNV_I11BE_Gr9_iwWjyhmbXnL3iC-CRKAt63w5OSgeKlcvm67hHcu_Rt1dYH7biqNtspos07R_QUadK5513G-5oQbfDlC_TRw2ih3T1CfY87lbduufG42Jj3M3TKwiaIr9dDmnl5NJ2_lIS9kX-E4rIXPWyqDcnw_g0GFIkKtACmUWGQR03S4LIe49vJrQqPYAbPNgRdZtvQ-nvf9XZ_a6YDYQq4h7GbnQy_Elewat1hU6A-ZbzN9Q7pGPuxdWEmUZTPbQFXEsozeInz1hEHmsXwRTc25N80Ks2ZZG2Ph-3xFD13uv_leKu3KHIcTn1KiKpeRCL8zlops_w4DmVz9k6lCzXgxxgg1qLxzhYHVB7aukBMlAxlbjwPpDaRiA9IHrtgeNzTvAC1kK1IGpdbs0cjs8KpO5T7TOVEVSjScqLAxIF8nf0hLXqShMWeKlPbBhoIQXVp9KL9po07npK_va4rD0i8b65PGXZbVVdbxBLhtF-1egc1ijK5dzd7vbyFYEuckv9flp_EDJO9GxvRFJ1EmlWh0DEqv4eqeKmhvvUyM853SUG6eb8xStPSeUN9uBBxxhWfvMR6n8dNgD-djTp6hnPYVyl7TOnD4G4ObKPVC2nGGoTsyn0hY93fIo3VVmmqw2gxd2VtM6kZ7ka-TXH81i34yjEBmhnvXOrCx3vqTX0I_oRUPDibBRLmHgKHVcv2lklB_q0dK56nC4yHqoZFmxV6Wcy-x5hYVjzloshNw9y93WTbMTJYWyVOoex41SHYFw-p1ZDadzwIDqp1uxAcNllUjEgyTbH0MDANtBVahd3-OqykaKr0Zn5whLuqawGFGkVajx4ni-YE79gc0NlQJm8AX6lKvkc4_5XrPZyWMFuyA5bGdS1ns-D-S1P-AwPxIMgjxFUJMvuIczianl_xn8cXSZImRjYmFwfHzsE8YuaRgGa7F2dxUABiwcaXsrKWKdlOF5C7vjafMhrB71ZUMeveVWaiTvlGlcoL3kTensjk1WhXuFGj0z6URz-CR6-7hHJa4CrRUpqitQhFEfIIKUxnSCh8MolZJ8Agsd2nJWjkGecEY7YIKRq4Lkd7wjCIVCQamWRJhABf9Y_o9Cj6rxkIxCmsCoiLtIzlGM4ToRtAxMjSbH_MkrPSVrkl_uz2-6.iyojA8h7DfeY55_xD7juNqM8Em-mVVxR6oIZ8E4mtXc=</keystore>
+          <keystore>data:application/p12;aes,v:S.VmlTVnZLdXJlZmZTSW5reg==.mNm6cH7E2gFD0T1Ye4jbpg==.Z50IwjsBlRs6JSBQ2sD7pcjtn6EW2hh1DgV3zuJh_PLjp8vSfWYagz2hkhoZE2ZVNsz63avn5K7wH9hlqF4tCj8N2hB151bVnOtnuk7i7d8FyVrr9RPsIu63RxzuliKNfxl9a3zQL9-o7LC7xUCFoiYzlNCpLMz_LzXiLkxYJWZVnyHp8N5PshzMqpSZ8kNAhLPhLtVeyVmtJiW983NhUxAYizDHKW7Sj2xkEd5EBTS7HRsxrfvGzV16v-u_6k9GPM6EYwY3N7wmi5Qsu1xzY4zGXQbd4CsroiGOl-OXWXBvrpP0_MlMLD5ac741iMkRlRCV_ru77vsqvF7HTgNHS6wpA2q6dmQD1nL_vs-O2coUX26EEmdwr5DM2l3TSqsRmLcO6XyNEc9P2nzBWqmf9h5KjR-WT2KwV9EwWunt3agOaXFhXYvwaz744obYRjopIRNX1gWmyvWw9aDnGpWKXR1hE2giBl4qf9ZRT_bLA318DXBXeXCv2NHClz7TM1OTR2_U71TEzCgVF1G6e-YoTeAwftHErrJDf5NXtqKroe4qALCV6wTe1WC2M8fWujRChVUsNMVT9KLHlZ1yKpz2rjm7TTUENfSnggwROA8ggNWWpjUfr3saC2X08_iOPOApvu9U4mT-C6R0RCJZH38xqW8E14mtVn5mwacPKaBF_IS3VimGOisufLk6dxlR5mvIGD_5QVBKU_6JDJqXp0jvmG9h2FoPLzte7rO_QZtKTi1wWFsx8xPhoF_rS-0h7poFNAuiZMGeDTLhoqlzgH8poKNA913x-7Xp9fggM4VDREzRst7tSK59B27oLRvk9dyhs-K9XNCX3-J4nX0zA8D8R_5suyXEkIpXPxTxOF7sz6BzkNUBnWUzAxrYRkGJtK_QgfiUWechX9TUPKIEw-QOFb0MKSE-koyrldt6ddGvszODCHmSjCdVySF6Qxp5dHC6jpvdruYCC4qVbfaWNtJu4hxp8QIa9bSx78bhvDtQ5nf7jp-Fvo5YulIVd19qx8Mi8qgSWsIlBM6m_MnsO7EgDDwiX8UI-mtO98yCTykZFkCxEwpmN4Ric_m1d1uX8auAVy1ngpjAnu0jWzb4EOe0XQm-A-7ID11Xi-A1jIlMWSkYtxEQkYPLKQRW53Sca1ed7VcS-U7nzHzy5LfnFDuPvKxBDgZ02KDeWdBhH-SOGmjojMnVEg2H_kb85uD5TitH6lA0sKsExyKB1h9wtMT2Hg==.mbupF-uSNMhHMmJdEDj-gUcuQggYkd7ELZy5ha1EHG8=</keystore>
           <type>eddsa</type>
           <external-id>did:example:1234xyz#key-1</external-id>
         </signing-key>

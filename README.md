@@ -9,9 +9,10 @@ The Curity Identity Server can issue verifiable credentials using the pre-author
 
 You can merge the configuration from `idsvr/basic-vci-configuration.xml` with your configuration of the Curity Identity Server to get all the basic settings required by VCI. This will create a wallet client, a credential type, scope, token issuer, signing keys, etc. This can be used as a basis for following the pre-authorized code tutorial: https://curity.io/resources/learn/pre-authorized-code. Note that the configuration file uses default names for profiles, service roles, account managers, etc. so it works best when the Basic Configuration Wizard was used.
 
+It's assumed that the token service profile has enabled the code flow capability for clients.
+
 This configuration adds:
 
-* the code flow capability to the `token-service` profile in case it is not already available,
 * the claims `address`, `given_name` and `family_name` and the related claims provider `account-manager-claims-provider` that uses the `default-account-manager` (if they don't exist yet)
 * a new signing key `credential_issuer_key` with an external key ID (DID) to sign credentials with,
 * a custom token issuer `credential_issuer` that can issue credentials as JWTs,
@@ -20,7 +21,7 @@ This configuration adds:
 * a scope called `openid_credential` for authorizing a client to request credentials in general,
 * a verifiable credential called `UniversityDegree` with the user's `address`, `given_name` and `family_name`,
 * a scope called `university_degree` for authorizing a client to request the claims in the university degree, 
-* an OAuth client called `wallet` that is allowed to request the credential using [OAuth.tools](https://oauth.tools).
+* an OAuth client called `wallet` that is allowed to request the credential using [OAuth.tools](https://oauth.tools) and the code flow capability.
 
 ## Configure the Pre-Authorized Code Flow
 
@@ -29,7 +30,6 @@ You can merge the configuration from `idsvr/full-vci-configuration.xml` with you
 In addition to the above, this configuration adds:
 
 * the token exchange capability to the `token-service` profile (if not already enabled),
-* the token endpoint to the `default` service role (just in case it does not already expose it),
 * a Token Procedure called `pre-authorized-code` that issues a `pre-authorized_code` and `user_pin`,
 * the token procedure to the token-exchange flow at the token endpoint,
 * an OAuth client called `university-website` that may request a pre-authorization code from the Curity Identity Server via [OAuth.tools](https://oauth.tools).
